@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Earth Alliance | ブルー・アース・アライアンス</title>
+    <meta name="description" content="一着の服から、地域の「土」と「未来」を育てる。「地着・地消・地循」による地域完結型・資源循環プラットフォーム">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+JP:wght@400;500;600&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor follower -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Progress bar -->
+    <div class="progress-bar"></div>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="image/logo.png" alt="Blue Earth Alliance">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#mission">MISSION<span class="nav-jp">理念</span></a></li>
+                    <li><a href="#technology">TECHNOLOGY<span class="nav-jp">技術</span></a></li>
+                    <li><a href="#case-study">CASE STUDY<span class="nav-jp">事例</span></a></li>
+                    <li><a href="#partnership">PARTNERSHIP<span class="nav-jp">企業様</span></a></li>
+                    <li><a href="#farmers">FARMERS<span class="nav-jp">農家様</span></a></li>
+                    <li><a href="#organization">ORGANIZATION<span class="nav-jp">団体概要</span></a></li>
+                    <li><a href="#contact" class="btn-contact"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>CONTACT</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="メニューを開く">
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-inner">
+                <div class="hero-illustration">
+                    <img src="image/hero_illustration.png" alt="服から土へ、未来を育てる循環">
+                </div>
+                <div class="hero-content">
+                    <div class="hero-eyecatch">
+                        <span class="eyecatch-line"></span>
+                        <span class="eyecatch-text">Circular Fashion Platform</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line"><span class="char">一</span><span class="char">着</span><span class="char">の</span><span class="char">服</span><span class="char">か</span><span class="char">ら</span><span class="char">、</span></span>
+                        <span class="title-line"><span class="char">地</span><span class="char">域</span><span class="char">の</span><span class="char-accent">「</span><span class="char-accent">土</span><span class="char-accent">」</span><span class="char">と</span><span class="char-accent">「</span><span class="char-accent">未</span><span class="char-accent">来</span><span class="char-accent">」</span><span class="char">を</span></span>
+                        <span class="title-line"><span class="char">育</span><span class="char">て</span><span class="char">る</span><span class="char">。</span></span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        <span class="subtitle-jp">「地着・地消・地循」による地域完結型・資源循環プラットフォーム</span>
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#mission" class="btn-explore">
+                            <span>Explore</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MISSION -->
+        <section id="mission" class="section mission">
+            <div class="section-bg-text">MISSION</div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <div class="section-title-wrap">
+                        <span class="section-subtitle">MISSION</span>
+                        <h2 class="section-title">私たちが目指す循環</h2>
+                    </div>
+                </div>
+
+                <div class="mission-hero">
+                    <div class="mission-cycle-wrapper">
+                        <div class="model-cycle">
+                            <div class="cycle-center">
+                                <span>循環</span>
+                            </div>
+                            <div class="cycle-item item-1">
+                                <div class="step-content">
+                                    <h4>排出</h4>
+                                    <p>地域で着た服を回収</p>
+                                </div>
+                                <div class="step-icon">
+                                    <img src="image/icon_step_emission.png" alt="排出">
+                                </div>
+                            </div>
+                            <div class="cycle-item item-2">
+                                <div class="step-icon">
+                                    <img src="image/icon_step_resource.png" alt="資源化">
+                                </div>
+                                <div class="step-content">
+                                    <h4>資源化</h4>
+                                    <p>土に還す</p>
+                                </div>
+                            </div>
+                            <div class="cycle-item item-3">
+                                <div class="step-icon">
+                                    <img src="image/icon_step_regeneration.png" alt="再生">
+                                </div>
+                                <div class="step-content">
+                                    <h4>再生</h4>
+                                    <p>次の製品へ</p>
+                                </div>
+                            </div>
+                            <svg class="cycle-arrows" viewBox="0 0 400 400">
+                                <circle cx="200" cy="200" r="140" fill="none" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mission-concept">
+                        <div class="concept-badge">CONCEPT</div>
+                        <h3>「地着・地消・地循」の実現</h3>
+                        <div class="concept-text">
+                            <p>私たちが目指すのは、単なるリサイクルではありません。</p>
+                            <p>良いものを長く着て、リユースし、着られなくなった時に初めて「資源」として土に還す。</p>
+                            <p>地域で着られた服が、地域の土となり、地域の農作物を育て、また地域の経済を潤す。</p>
+                            <p class="concept-highlight">そんな「地域完結型」の美しい循環を日本全国につくることです。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mission-issues-section">
+                    <div class="issues-header">
+                        <span class="issues-badge">ISSUES</span>
+                        <h3 class="issues-heading">解決すべき2つの課題</h3>
+                    </div>
+                    <div class="mission-issues">
+                        <div class="issue-card">
+                            <div class="issue-number">01</div>
+                            <div class="issue-img">
+                                <img src="image/photo_mass_disposal_no_sign.png" alt="大量廃棄される衣類">
+                                <div class="issue-overlay"></div>
+                            </div>
+                            <div class="issue-content">
+                                <h4>大量廃棄の現実</h4>
+                                <p>国内で年間<strong>50万トン</strong>の服が捨てられ、その<strong>66%以上</strong>が焼却・埋立されています。</p>
+                            </div>
+                        </div>
+                        <div class="issue-card">
+                            <div class="issue-number">02</div>
+                            <div class="issue-img">
+                                <img src="image/photo_abandoned_farmland.png" alt="耕作放棄地">
+                                <div class="issue-overlay"></div>
+                            </div>
+                            <div class="issue-content">
+                                <h4>耕作放棄地の増加</h4>
+                                <p>地域の「使われない農地」が増え続け、管理不全が地域の負担となっています。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGY -->
+        <section id="technology" class="section technology">
+            <div class="section-bg-text">TECHNOLOGY</div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <div class="section-title-wrap">
+                        <span class="section-subtitle">TECHNOLOGY</span>
+                        <h2 class="section-title">循環を支える技術</h2>
+                    </div>
+                </div>
+
+                <div class="tech-content">
+                    <div class="tech-visual">
+                        <div class="tech-circle">
+                            <div class="circle-glow"></div>
+                            <img src="image/p-facts.png" alt="P-FACTS">
+                        </div>
+                        <div class="tech-particles">
+                            <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="tech-text">
+                        <div class="tech-badge">KEY TECHNOLOGY</div>
+                        <h3>循環を実現するインフラ<br><span class="tech-name">「P-FACTS」</span></h3>
+                        <div class="tech-description">
+                            <p>この循環を実現するために、私たちは株式会社村田製作所の100%子会社である株式会社ピエクレックスが推進するアパレルの循環インフラ「P-FACTS」（ピーファクツ）を活用しています。</p>
+                            <p>株式会社ピエクレックスが開発した植物由来の素材「電気の繊維」ピエクレックスは、抗菌性※などの機能性とともに、役割を終えた後は適切な条件下で堆肥化され、水とCO2に分解することができます。</p>
+                            <p>私たちは、このテクノロジーを開発・提供する株式会社ピエクレックスが推進する「P-FACTS」（ピーファクツ）と連携し、科学的根拠に基づいた資源循環を推進しています。</p>
+                            <p class="tech-note">※抗菌性とは、菌の増殖を抑える効果のことです。使用状況により効果は変わります。</p>
+                        </div>
+                        <a href="https://pieclex.com/" target="_blank" rel="noopener noreferrer" class="btn-link">
+                            <span>株式会社ピエクレックス 公式サイト</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CASE STUDY -->
+        <section id="case-study" class="section case-study">
+            <div class="section-bg-text">CASE STUDY</div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <div class="section-title-wrap">
+                        <span class="section-subtitle">CASE STUDY</span>
+                        <h2 class="section-title">全国の活動事例</h2>
+                    </div>
+                </div>
+
+                <p class="section-intro">日本各地で広がる、循環の取り組みをご紹介します。</p>
+
+                <div class="case-studies-grid">
+                    <div class="case-card">
+                        <div class="case-card-images">
+                            <div class="case-image">
+                                <img src="image/taken_cotton.png" alt="コットン栽培の様子">
+                            </div>
+                            <div class="case-image">
+                                <img src="image/cotton_hunting.png" alt="コットン収穫体験">
+                            </div>
+                        </div>
+                        <div class="case-card-content">
+                            <div class="case-location">
+                                <span class="location-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/>
+                                        <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+                                    </svg>
+                                </span>
+                                奈良県天理市・田原本町・川西町
+                            </div>
+                            <h4 class="case-title">社会福祉法人 愛和会</h4>
+                            <p class="case-description">実証プロジェクトの参画パートナーである愛和会が保有する農園では、地域で回収した使用済み衣服を土に還し、その堆肥でコットンを育てる一連の循環サイクルを実現。園児向けの収穫体験イベントを通じて、子どもたちが「服から土へ、土から綿へ」という地域完結型の循環を学ぶ機会を創出しました。</p>
+                            <div class="case-tags">
+                                <span class="case-tag">コットン栽培</span>
+                                <span class="case-tag">収穫体験</span>
+                                <span class="case-tag">環境教育</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PARTNERSHIP -->
+        <section id="partnership" class="section partnership">
+            <div class="section-bg-text">PARTNERSHIP</div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <div class="section-title-wrap">
+                        <span class="section-subtitle">PARTNERSHIP</span>
+                        <h2 class="section-title">企業の皆様へ</h2>
+                    </div>
+                </div>
+
+                <!-- Partner Certification System -->
+                <div class="partner-system">
+                    <div class="system-header">
+                        <div class="system-badge">CERTIFICATION</div>
+                        <h3>パートナー認定制度</h3>
+                        <p class="system-desc">循環への貢献度に応じて4つのランクを認定し、ロゴの使用権や特典を付与しています。</p>
+                    </div>
+
+                    <div class="roles-overview">
+                        <p class="roles-intro">P-FACTSの循環サイクルにおいて、担っていただく役割を以下の7つに分類します。</p>
+                        <div class="roles-list">
+                            <span class="role-tag">1 対応素材供給</span>
+                            <span class="role-tag">2 対応製品供給</span>
+                            <span class="role-tag">3 製品導入</span>
+                            <span class="role-tag">4 回収</span>
+                            <span class="role-tag">5 再資源化</span>
+                            <span class="role-tag">6 再資源利用</span>
+                            <span class="role-tag">7 事務局</span>
+                        </div>
+                    </div>
+
+                    <div class="rank-list">
+                        <div class="rank-item diamond">
+                            <div class="rank-glow"></div>
+                            <div class="rank-logo">
+                                <img src="image/diamond.png" alt="Diamond Partner">
+                            </div>
+                            <div class="rank-info">
+                                <h4>Diamond</h4>
+                                <p class="rank-req">「7. 事務局」の役割を担う</p>
+                                <p class="rank-desc">地域やコミュニティにおける循環サイクルのハブとして機能し、自律的な運営を行っていること。</p>
+                            </div>
+                        </div>
+                        <div class="rank-item platinum">
+                            <div class="rank-glow"></div>
+                            <div class="rank-logo">
+                                <img src="image/platinum.png" alt="Platinum Partner">
+                            </div>
+                            <div class="rank-info">
+                                <h4>Platinum</h4>
+                                <p class="rank-req">「1〜6」のうち、3つ以上を実施</p>
+                                <p class="rank-desc">複数の役割を担い、循環サイクルの主要なプレイヤーとして活動していること。</p>
+                            </div>
+                        </div>
+                        <div class="rank-item gold">
+                            <div class="rank-glow"></div>
+                            <div class="rank-logo">
+                                <img src="image/gold.png" alt="Gold Partner">
+                            </div>
+                            <div class="rank-info">
+                                <h4>Gold</h4>
+                                <p class="rank-req">「1〜6」のうち、2つを実施</p>
+                                <p class="rank-desc">循環サイクルの中で、複数の接点を持ち貢献していること。</p>
+                            </div>
+                        </div>
+                        <div class="rank-item green">
+                            <div class="rank-glow"></div>
+                            <div class="rank-logo">
+                                <img src="image/green.png" alt="Green Partner">
+                            </div>
+                            <div class="rank-info">
+                                <h4>Green</h4>
+                                <p class="rank-req">「1〜6」のうち、1つを実施</p>
+                                <p class="rank-desc">循環サイクルへのエントリーとして、一つの役割を確実に担っていること。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="partnership-intro">
+                    <h3>規模に合わせて選べる<span class="accent">3つ</span>の関わり方</h3>
+                </div>
+
+                <div class="partnership-cards">
+                    <div class="partner-card">
+                        <div class="card-accent"></div>
+                        <div class="card-header">
+                            <span class="pattern">A</span>
+                            <h4>自社実践型</h4>
+                        </div>
+                        <div class="card-icon">
+                            <img src="image/icon_pattern_a.png" alt="Pattern A">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-item">
+                                <span class="label">対象</span>
+                                <span class="value">環境先進企業、ホテル事業者など</span>
+                            </div>
+                            <div class="card-item">
+                                <span class="label">内容</span>
+                                <span class="value">自社敷地内で製品利用〜堆肥化〜活用までを完結</span>
+                            </div>
+                            <div class="card-item">
+                                <span class="label">メリット</span>
+                                <span class="value">処理委託費削減、自社内でのストーリー完結によるPR効果</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="card-accent"></div>
+                        <div class="card-header">
+                            <span class="pattern">B</span>
+                            <h4>寄付・協賛型</h4>
+                        </div>
+                        <div class="card-icon">
+                            <img src="image/icon_pattern_b.png" alt="Pattern B">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-item">
+                                <span class="label">対象</span>
+                                <span class="value">CSR予算を持つ大手企業、金融機関</span>
+                            </div>
+                            <div class="card-item">
+                                <span class="label">内容</span>
+                                <span class="value">自治体や学校へ製品を寄付し、地域貢献を行う</span>
+                            </div>
+                            <div class="card-item">
+                                <span class="label">メリット</span>
+                                <span class="value">地域の環境教育支援、社会的信用の向上</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="partner-card">
+                        <div class="card-accent"></div>
+                        <div class="card-header">
+                            <span class="pattern">C</span>
+                            <h4>部分参加型</h4>
+                        </div>
+                        <div class="card-icon">
+                            <img src="image/icon_pattern_c.png" alt="Pattern C">
+                        </div>
+                        <div class="card-body">
+                            <div class="card-item">
+                                <span class="label">対象</span>
+                                <span class="value">中小企業、店舗、イベント主催者</span>
+                            </div>
+                            <div class="card-item">
+                                <span class="label">内容</span>
+                                <span class="value">Tシャツ1枚からの製品導入、イベントでの回収協力</span>
+                            </div>
+                            <div class="card-item">
+                                <span class="label">メリット</span>
+                                <span class="value">低いハードルでSDGsに参加可能</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="partnership-cta">
+                    <a href="https://docs.google.com/forms/" target="_blank" class="btn-primary">
+                        <span>パートナー参加・認定に関するお問い合わせ</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FARMERS -->
+        <section id="farmers" class="section farmers">
+            <div class="section-bg-text">FARMERS</div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <div class="section-title-wrap">
+                        <span class="section-subtitle">FARMERS</span>
+                        <h2 class="section-title">農家の皆様へ</h2>
+                    </div>
+                </div>
+
+                <div class="farmers-content">
+                    <div class="farmers-intro">
+                        <h3>地域で循環を共に作る<br>「パートナー農家様」を募集しています</h3>
+                        <p>地域の衣類ゴミ・耕作放棄地を「価値」に変える取り組みに参加しませんか？</p>
+                    </div>
+
+                    <div class="farmers-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <img src="image/icon_benefit_income.png" alt="買取">
+                            </div>
+                            <div class="benefit-content">
+                                <h4><span class="benefit-label">作る</span>買取</h4>
+                                <p>収穫したコットンは提携アパレルメーカーが全量買取。相場に左右されない安定収入源に。</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <img src="image/icon_benefit_community.png" alt="集客">
+                            </div>
+                            <div class="benefit-content">
+                                <h4><span class="benefit-label">呼ぶ</span>集客</h4>
+                                <p>収穫イベントを開催し、企業や地域住民を集客。ファン作りと野菜直売のチャンス。</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <img src="image/icon_benefit_processing.png" alt="処理">
+                            </div>
+                            <div class="benefit-content">
+                                <h4><span class="benefit-label">還す</span>処理</h4>
+                                <p>衣類を堆肥原料として受け入れる際の処理協力金の受領（※条件あり）。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="farmers-cta">
+                        <a href="https://docs.google.com/forms/" target="_blank" class="btn-primary">
+                            <span>農地活用・栽培に関するお問い合わせ</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ORGANIZATION -->
+        <section id="organization" class="section organization">
+            <div class="section-bg-text">ORGANIZATION</div>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">06</span>
+                    <div class="section-title-wrap">
+                        <span class="section-subtitle">ORGANIZATION</span>
+                        <h2 class="section-title">団体概要</h2>
+                    </div>
+                </div>
+
+                <div class="org-table-wrapper">
+                    <div class="org-bg-logo"></div>
+                    <div class="org-grid">
+                        <div class="org-item">
+                            <span class="org-label">団体名</span>
+                            <span class="org-value">Blue Earth Alliance<br><small>（ブルー・アース・アライアンス）</small></span>
+                        </div>
+                        <div class="org-item">
+                            <span class="org-label">所属・運営母体</span>
+                            <span class="org-value">一般社団法人みらい政策研究所 所属協議会</span>
+                        </div>
+                        <div class="org-item">
+                            <span class="org-label">代表者</span>
+                            <span class="org-value">森 章浩</span>
+                        </div>
+                        <div class="org-item full-width">
+                            <span class="org-label">事業目的</span>
+                            <span class="org-value">
+                                <strong>日本全国における「地着・地消・地循」による地域完結型・資源循環プラットフォームの構築</strong>
+                                <ul>
+                                    <li><strong>廃棄衣類の資源化</strong> - 不要になった衣類を回収し、堆肥化して土に還す</li>
+                                    <li><strong>耕作放棄地の再生</strong> - 生成した堆肥を活用し、地域の耕作放棄地でコットン等を栽培</li>
+                                    <li><strong>地域経済圏の創出</strong> - 収穫したコットンを製品化し、サーキュラーエコノミーを実現</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="org-item full-width">
+                            <span class="org-label">主な活動内容</span>
+                            <span class="org-value">
+                                <ul>
+                                    <li>衣類回収ボックスの設置および回収物流の構築</li>
+                                    <li>堆肥化パートナー（Hub農園）の開拓および運営支援</li>
+                                    <li>コットン栽培および収穫イベントの開催（環境教育・地域交流）</li>
+                                    <li>参加企業・自治体への認定パートナー制度（ランク付与）の運用</li>
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="org-item">
+                            <span class="org-label">所在地</span>
+                            <span class="org-value">〒107−0061<br>東京都港区北青山1丁目3番1号<br>アールキューブ青山3階<br>（一社）みらい政策研究所内</span>
+                        </div>
+                        <div class="org-item">
+                            <span class="org-label">連絡先</span>
+                            <span class="org-value">
+                                <a href="mailto:info_blueearthalliance@dooox.co.jp">info_blueearthalliance@dooox.co.jp</a><br>
+                            </span>
+                        </div>
+                        <div class="org-item full-width">
+                            <span class="org-label">協議会運営体制</span>
+                            <span class="org-value">
+                                <ul class="org-structure">
+                                    <li><strong>【事務局・運営母体】</strong><a href="https://www.mirai-seisaku.com/" target="_blank" rel="noopener noreferrer">一般社団法人みらい政策研究所</a>（地域循環ハブ・全体統括）</li>
+                                    <li><strong>【企画・運営パートナー】</strong><a href="https://dooox.co.jp/" target="_blank" rel="noopener noreferrer">株式会社Dooox</a>（運営実務・企業マッチング・スキーム構築）</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-card">
+                    <div class="contact-bg-shapes">
+                        <div class="contact-shape contact-shape-1"></div>
+                        <div class="contact-shape contact-shape-2"></div>
+                    </div>
+                    <div class="contact-content">
+                        <span class="contact-subtitle">CONTACT</span>
+                        <h2 class="contact-title">お問い合わせ</h2>
+                        <p>本プロジェクトに関するお問い合わせは、下記よりお願いいたします。</p>
+                        <a href="mailto:info_blueearthalliance@dooox.co.jp" class="btn-contact-large">
+                            <span>メールでのお問い合わせ</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="image/logo.png" alt="Blue Earth Alliance">
+                </div>
+                <div class="footer-links">
+                    <a href="#mission">理念</a>
+                    <a href="#technology">技術</a>
+                    <a href="#case-study">事例</a>
+                    <a href="#partnership">企業様</a>
+                    <a href="#farmers">農家様</a>
+                    <a href="#organization">団体概要</a>
+                    <a href="#contact">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Blue Earth Alliance. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

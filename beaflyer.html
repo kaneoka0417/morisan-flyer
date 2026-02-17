@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Earth Alliance A4チラシ v4</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --white: #FFFFFF;
+    --bg-light: #F4F7F9;
+    --bg-section: #EEF3F6;
+    --teal: #3D7A8A;
+    --teal-dark: #2C5F6E;
+    --teal-light: #5B9DAE;
+    --teal-pale: #A8CED8;
+    --teal-ghost: #D8E8ED;
+    --green-soft: #6B9E7A;
+    --text-main: #2D3436;
+    --text-sub: #4A5558;
+    --text-light: #7A8B8F;
+    --text-muted: #9AABAF;
+    --border: #D4E0E4;
+  }
+
+  body {
+    background: #B0B8BC;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+  }
+
+  /* Top accent bar */
+  .top-bar {
+    height: 3px;
+    background: linear-gradient(90deg, var(--teal), var(--teal-light), var(--teal));
+  }
+
+  .content {
+    padding: 8mm 18mm 6mm 18mm;
+    height: calc(100% - 3px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ====== SECTION 1: HEADER ====== */
+  .header {
+    text-align: center;
+    margin-bottom: 1.5mm;
+  }
+
+  .header-logo {
+    width: 11mm;
+    height: auto;
+    margin-bottom: 1mm;
+    opacity: 0.85;
+  }
+
+  .catch-main {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 16pt;
+    font-weight: 600;
+    color: var(--teal-dark);
+    letter-spacing: 0.12em;
+    line-height: 1.5;
+    margin-bottom: 1.5mm;
+  }
+
+  .catch-sub {
+    font-size: 7.5pt;
+    font-weight: 400;
+    color: var(--text-sub);
+    letter-spacing: 0.06em;
+    line-height: 1.8;
+  }
+
+  .catch-sub strong {
+    font-weight: 600;
+    color: var(--teal);
+  }
+
+  /* Divider */
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+    margin: 1.5mm 0;
+    position: relative;
+  }
+  .divider::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2px;
+    width: 30mm;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, var(--teal-pale), transparent);
+  }
+
+  /* ====== SECTION 2: CONCEPT + CIRCULAR ====== */
+  .concept-row {
+    display: flex;
+    gap: 3mm;
+    margin-bottom: 2.5mm;
+    align-items: center;
+  }
+
+  .concept-text {
+    flex: 1;
+  }
+
+  .section-label {
+    font-size: 6.5pt;
+    font-weight: 600;
+    color: var(--teal-light);
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    margin-bottom: 1.5mm;
+  }
+
+  .concept-lead {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 10pt;
+    font-weight: 500;
+    color: var(--teal-dark);
+    line-height: 1.7;
+    margin-bottom: 1.5mm;
+  }
+
+  .concept-body {
+    font-size: 7pt;
+    font-weight: 400;
+    color: var(--text-sub);
+    line-height: 1.85;
+    letter-spacing: 0.03em;
+  }
+
+  .concept-body em {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--teal);
+  }
+
+  .circular-visual {
+    width: 48mm;
+    flex-shrink: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circular-visual img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+  }
+
+  .circular-caption {
+    font-size: 5.5pt;
+    color: var(--text-muted);
+    margin-top: 0.5mm;
+    letter-spacing: 0.05em;
+  }
+
+  /* ====== SECTION 3: PRODUCT LINEUP ====== */
+  .products-section {
+    background: var(--bg-light);
+    border-radius: 6px;
+    padding: 3mm 4mm 2.5mm 4mm;
+    margin-bottom: 3.5mm;
+  }
+
+  .products-label {
+    text-align: center;
+    margin-bottom: 3mm;
+  }
+
+  .products-label .section-label {
+    font-size: 7.5pt;
+    letter-spacing: 0.3em;
+  }
+
+  .products-grid {
+    display: flex;
+    gap: 3.5mm;
+  }
+
+  .product-card {
+    flex: 1;
+    background: var(--white);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+  }
+
+  .product-img-area {
+    aspect-ratio: 4 / 3;
+    background: linear-gradient(135deg, var(--bg-section), var(--teal-ghost));
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-img-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .product-icon {
+    opacity: 0.7;
+  }
+
+  .product-info {
+    padding: 2mm 2.5mm;
+  }
+
+  .product-name {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: var(--teal-dark);
+    margin-bottom: 0.8mm;
+    letter-spacing: 0.05em;
+  }
+
+  .product-tagline {
+    font-size: 6pt;
+    font-weight: 500;
+    color: var(--teal);
+    margin-bottom: 0.8mm;
+    font-style: italic;
+  }
+
+  .product-desc {
+    font-size: 6pt;
+    color: var(--text-sub);
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+  }
+
+  /* ====== SECTION 3.5: COTTON OWNER ====== */
+  .cotton-owner-section {
+    background: var(--white);
+    border: 1.5px solid var(--teal-pale);
+    border-radius: 6px;
+    padding: 2.5mm 4mm;
+    margin-bottom: 3.5mm;
+    display: flex;
+    align-items: center;
+    gap: 3mm;
+  }
+
+  .cotton-owner-icon {
+    width: 8mm;
+    height: 8mm;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, var(--teal-ghost), var(--bg-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cotton-owner-icon svg {
+    width: 5mm;
+    height: 5mm;
+  }
+
+  .cotton-owner-content {
+    flex: 1;
+  }
+
+  .cotton-owner-title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: var(--teal-dark);
+    margin-bottom: 0.5mm;
+    letter-spacing: 0.08em;
+  }
+
+  .cotton-owner-desc {
+    font-size: 6pt;
+    color: var(--text-sub);
+    line-height: 1.7;
+  }
+
+  /* ====== SECTION 4: PHOTO + MERITS ====== */
+  .merits-row {
+    display: flex;
+    gap: 4mm;
+    margin-bottom: 0;
+    align-items: stretch;
+    flex-shrink: 0;
+  }
+
+  .photo-side-wrapper {
+    width: 38mm;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-side {
+    flex: 1;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  }
+
+  .photo-caption {
+    font-size: 5.5pt;
+    color: var(--text-sub);
+    text-align: center;
+    margin-top: 1mm;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+  }
+
+  .photo-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .photo-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2mm 2.5mm;
+    background: linear-gradient(transparent, rgba(44,95,110,0.75));
+  }
+
+  .photo-overlay-text {
+    font-size: 5.5pt;
+    color: var(--white);
+    line-height: 1.6;
+    letter-spacing: 0.04em;
+  }
+
+  .merits-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .merits-label-row {
+    margin-bottom: 1.5mm;
+  }
+
+  .merits-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5mm;
+    flex: 1;
+  }
+
+  .merit-item {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5mm;
+    padding: 2.5mm 3mm;
+    background: var(--bg-light);
+    border-radius: 5px;
+    border-left: 3px solid var(--teal-pale);
+  }
+
+  .merit-num {
+    font-size: 14pt;
+    font-weight: 700;
+    color: var(--teal-ghost);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 7mm;
+    text-align: center;
+  }
+
+  .merit-content {
+    flex: 1;
+  }
+
+  .merit-title {
+    font-size: 8pt;
+    font-weight: 600;
+    color: var(--teal-dark);
+    margin-bottom: 0.5mm;
+    letter-spacing: 0.08em;
+  }
+
+  .merit-desc {
+    font-size: 6.5pt;
+    color: var(--text-sub);
+    line-height: 1.75;
+  }
+
+  /* ====== SECTION 5: CTA / FOOTER ====== */
+  .cta-section {
+    border-top: 1px solid var(--border);
+    padding-top: 2mm;
+    flex-shrink: 0;
+  }
+
+  .cta-message {
+    text-align: center;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 7.5pt;
+    font-weight: 500;
+    color: var(--teal-dark);
+    letter-spacing: 0.08em;
+    margin-bottom: 2mm;
+  }
+
+  .footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 3mm;
+  }
+
+  .footer-logo {
+    width: 12mm;
+    height: auto;
+    opacity: 0.85;
+  }
+
+  .footer-info {
+    font-size: 5.5pt;
+    color: var(--text-light);
+    line-height: 1.8;
+  }
+
+  .footer-org {
+    font-size: 6.5pt;
+    font-weight: 600;
+    color: var(--teal-dark);
+    letter-spacing: 0.12em;
+    margin-bottom: 0.3mm;
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: flex-start;
+    gap: 3mm;
+  }
+
+  .qr-block {
+    text-align: center;
+  }
+
+  .qr-img {
+    width: 24mm;
+    height: 24mm;
+    border: 1.5px solid var(--border);
+    border-radius: 3px;
+    padding: 1mm;
+  }
+
+  .qr-guide {
+    font-size: 5pt;
+    color: var(--text-muted);
+    margin-top: 0.5mm;
+    max-width: 28mm;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* Decorative background */
+  .bg-circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.025;
+    background: var(--teal);
+    z-index: 0;
+    pointer-events: none;
+  }
+  .bg-circle-1 {
+    width: 120mm;
+    height: 120mm;
+    top: -30mm;
+    right: -40mm;
+  }
+  .bg-circle-2 {
+    width: 80mm;
+    height: 80mm;
+    bottom: 20mm;
+    left: -25mm;
+  }
+
+  @media print {
+    body { background: none; padding: 0; }
+    .page { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="top-bar"></div>
+
+  <!-- Background decorative circles -->
+  <div class="bg-circle bg-circle-1"></div>
+  <div class="bg-circle bg-circle-2"></div>
+
+  <div class="content">
+
+    <!-- ====== 1. HEADER ====== -->
+    <div class="header">
+      <img class="header-logo" src="image/blue earth alliance logo.png" alt="BEA">
+      <div class="catch-main">
+        一着の服から、地域の「土」と「未来」を育てる。
+      </div>
+      <div class="catch-sub">
+        地域完結型・資源循環モデルを推進する協議会<strong>「Blue Earth Alliance」</strong>が提案する、新しい循環のカタチ。
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ====== 2. CONCEPT + CIRCULAR ====== -->
+    <div class="concept-row">
+      <div class="concept-text">
+        <div class="section-label">Concept</div>
+        <div class="concept-lead">
+          「服から土へ、土から服へ」。
+        </div>
+        <div class="concept-body">
+          私たちが目指すのは、単なるリサイクルではありません。良いものを長く着て、リユースし、着られなくなった時に初めて「資源」として土に還す。地域で着られた服が、地域の土となり、地域の農作物を育て、また地域の経済を潤す。そんな<em>「地域完結型」</em>の美しい循環を日本全国につくることです。
+        </div>
+      </div>
+      <div class="circular-visual">
+        <img src="image/circlular-image.png" alt="P-FACTS 循環モデル">
+        <div class="circular-caption">P-FACTS 循環モデル</div>
+      </div>
+    </div>
+
+    <!-- ====== 3. PRODUCT LINEUP ====== -->
+    <div class="products-section">
+      <div class="products-label">
+        <div class="section-label" style="margin-bottom:0">Product Lineup — 循環型プロダクト</div>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card">
+          <div class="product-img-area">
+            <img src="image/t-shirt_image.png" alt="循環型Tシャツ">
+          </div>
+          <div class="product-info">
+            <div class="product-name">ユニフォーム / Tシャツ</div>
+            <div class="product-tagline">「毎日着るものから、意識を変える」</div>
+            <div class="product-desc">植物由来の素材「ピエクレックス」を採用。優れた抗菌効果などの機能性を備え、役割を終えた後は土に還ります。</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-area">
+            <img src="image/grove_image.png" alt="循環型軍手">
+          </div>
+          <div class="product-info">
+            <div class="product-name">軍手</div>
+            <div class="product-tagline">「消耗品から、資源へ」</div>
+            <div class="product-desc">現場の必需品を循環の起点に。使用後は回収し、地域の農園を豊かにする土へと再生。</div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img-area">
+            <img src="image/towel_image.png" alt="循環型ノベルティ・備品">
+          </div>
+          <div class="product-info">
+            <div class="product-name">ノベルティ・備品</div>
+            <div class="product-tagline">「手渡すものにも、循環の物語を」</div>
+            <div class="product-desc">タオルなど、ステークホルダーへのギフトにも循環のストーリーを。</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ====== 3.5. COTTON OWNER SYSTEM ====== -->
+    <div class="cotton-owner-section">
+      <div class="cotton-owner-icon">
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M12 22C12 22 4 16 4 10C4 7 6 4 9 4C10.5 4 11.5 5 12 6C12.5 5 13.5 4 15 4C18 4 20 7 20 10C20 16 12 22 12 22Z" stroke="#3D7A8A" stroke-width="1.5" fill="#3D7A8A" fill-opacity="0.1"/>
+          <path d="M12 6V14M9 10H15" stroke="#3D7A8A" stroke-width="1.2"/>
+        </svg>
+      </div>
+      <div class="cotton-owner-content">
+        <div class="cotton-owner-title">コットンオーナー制度</div>
+        <div class="cotton-owner-desc">
+          増え続ける耕作放棄地を活用し、コットン栽培に参加いただける制度です。企業・個人を問わず、循環の「オーナー」として耕作放棄地の再生と地域経済の活性化に参画いただけます。
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== 4. MERITS + PARTICIPATION PATTERNS ====== -->
+    <div class="merits-row">
+      <div class="photo-side-wrapper">
+        <div class="photo-side">
+          <img src="image/cotton_growing.jpeg" alt="コットン栽培の様子">
+        </div>
+        <div class="photo-caption">地域の園児たちが育てるコットン</div>
+      </div>
+      <div class="merits-side">
+        <div class="merits-label-row">
+          <div class="section-label" style="margin-bottom:0">Merit — 参画のメリット</div>
+        </div>
+        <div class="merits-grid">
+          <div class="merit-item">
+            <div class="merit-num">01</div>
+            <div class="merit-content">
+              <div class="merit-title">実効性のあるSDGs</div>
+              <div class="merit-desc">廃棄コストを地域貢献へ転換。具体的で測定可能な環境インパクトを実現。</div>
+            </div>
+          </div>
+          <div class="merit-item">
+            <div class="merit-num">02</div>
+            <div class="merit-content">
+              <div class="merit-title">ブランドストーリー</div>
+              <div class="merit-desc">導入企業のロゴを入れた「循環の見える化」をサポート。発信力のあるESG施策に。</div>
+            </div>
+          </div>
+          <div class="merit-item">
+            <div class="merit-num">03</div>
+            <div class="merit-content">
+              <div class="merit-title">社員の意識変革</div>
+              <div class="merit-desc">「使うことが貢献になる」という誇り。日常から始まるサステナビリティ。</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Flexible spacer -->
+    <div style="flex-grow:1; min-height:2mm; max-height:10mm;"></div>
+
+    <!-- ====== 5. CTA / FOOTER ====== -->
+    <div class="cta-section">
+      <div class="cta-message">
+        まずは製品を手に取ることから、循環の輪に加わりませんか？
+      </div>
+      <div class="footer-row">
+        <div class="footer-left">
+          <img class="footer-logo" src="image/blue earth alliance logo.png" alt="BEA Logo">
+          <div class="footer-info">
+            <div class="footer-org">Blue Earth Alliance</div>
+            一般社団法人みらい政策研究所<br>
+            info_blueearthalliance@dooox.co.jp<br>
+            https://blueearthalliance.jp
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="qr-block">
+            <img class="qr-img" src="image/HP-qrcode.png" alt="QRコード">
+            <div class="qr-guide">お問い合わせ・導入のご相談は<br>こちらから</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
