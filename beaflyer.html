@@ -51,7 +51,7 @@
   }
 
   .content {
-    padding: 8mm 18mm 6mm 18mm;
+    padding: 10mm 18mm 6mm 18mm;
     height: calc(100% - 3px);
     display: flex;
     flex-direction: column;
@@ -145,11 +145,11 @@
   }
 
   .concept-body {
-    font-size: 7pt;
+    font-size: 6.8pt;
     font-weight: 400;
     color: var(--text-sub);
-    line-height: 1.85;
-    letter-spacing: 0.03em;
+    line-height: 1.9;
+    letter-spacing: 0.01em;
   }
 
   .concept-body em {
@@ -159,7 +159,7 @@
   }
 
   .circular-visual {
-    width: 48mm;
+    width: 65mm;
     flex-shrink: 0;
     text-align: center;
     display: flex;
@@ -212,7 +212,7 @@
   }
 
   .product-img-area {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 2;
     background: linear-gradient(135deg, var(--bg-section), var(--teal-ghost));
     position: relative;
     overflow: hidden;
@@ -221,7 +221,7 @@
   .product-img-area img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
   }
 
@@ -314,7 +314,7 @@
   }
 
   .photo-side-wrapper {
-    width: 38mm;
+    width: 48mm;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -381,7 +381,7 @@
     display: flex;
     align-items: flex-start;
     gap: 2.5mm;
-    padding: 2.5mm 3mm;
+    padding: 2mm 2.5mm;
     background: var(--bg-light);
     border-radius: 5px;
     border-left: 3px solid var(--teal-pale);
@@ -573,7 +573,7 @@
           <div class="product-info">
             <div class="product-name">ユニフォーム / Tシャツ</div>
             <div class="product-tagline">「毎日着るものから、意識を変える」</div>
-            <div class="product-desc">植物由来の素材「ピエクレックス」を採用。優れた抗菌効果などの機能性を備え、役割を終えた後は土に還ります。</div>
+            <div class="product-desc">抗菌性<span style="font-size:5pt; vertical-align:super;">※</span>などの機能性を備え、役割を終えた後は土に還ります。</div>
           </div>
         </div>
 
@@ -600,6 +600,11 @@
         </div>
 
       </div>
+    </div>
+
+    <!-- 注釈 -->
+    <div style="font-size: 5pt; color: var(--text-muted); line-height: 1.6; margin-top: -1.5mm; margin-bottom: 2.5mm;">
+      ※抗菌性とは、菌の増殖を抑える効果のことです。使用状況により効果は変わります。
     </div>
 
     <!-- ====== 3.5. COTTON OWNER SYSTEM ====== -->
@@ -672,7 +677,7 @@
             <div class="footer-org">Blue Earth Alliance</div>
             一般社団法人みらい政策研究所<br>
             info_blueearthalliance@dooox.co.jp<br>
-            https://blueearthalliance.jp
+            https://blue-earth-alliance.com
           </div>
         </div>
         <div class="footer-right">
